@@ -1,0 +1,52 @@
+.body{
+	background-color:#152030;
+}
+.main{
+	background-color:#fff;
+	text-align:center;
+	width:950px;
+	height:500px;
+	margin:30px auto;
+}
+h1{
+	margin-left:0px;
+	margin:30px 0px;	
+}
+h2{
+	margin-left:0px;
+}
+
+form {
+	margin:auto;
+	width:500px;
+	margin-top:50px;
+	text-align:right;
+}
+label{
+	margin-right:0px;
+	
+}
+input{
+
+}
+
+p{
+	width:500px;
+	margin-left:0;
+}
+select{
+	margin-top:0;
+	value-align:right;
+}	
+.name{
+
+
+}
+input[type="submit"]{
+	margin-top:0;
+	width:60;
+	margin-left:20px;
+}
+.error {
+	color:red;
+}

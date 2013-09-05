@@ -1,0 +1,35 @@
+div{
+	
+}
+
+h1{
+	margin-left:0;	
+}
+caption{
+	margin-top:0;
+	font-size:large
+	
+}
+tr{
+	width:500;
+	margin-top:50;
+	text-align:center;
+
+}
+
+p{
+	width:500;
+	margin-left:0;
+}
+table{
+	margin-top:20px;
+	value-align:center;
+}	
+td{
+	margin-right:20%
+}
+input[type="submit"]{
+	margin-top:0;
+	width:60;
+	margin-left:20px;
+}

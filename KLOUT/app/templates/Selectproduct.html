@@ -1,0 +1,39 @@
+<html>
+	<body>
+		<head>
+		<link rel="stylesheet" href="/static/css/styles2.css" type="text/css"/>
+
+		</head>
+		<div class="container">
+		<div class="main">
+	 		<h4 style="float:right;margin-right:2px;margin-top:-1px;">
+	 		{% if user.type == 'Vendor' %}
+			 	<a class="click" href="/create_new" > Create New Product &nbsp;</a>
+			 {% endif %}
+	 		<a class="click" href="/logout">Logout</a></h4>
+	 		<br>
+	 		<h1><a href="/selectproduct">KLOUT</a></h1>
+			<h2>Your nickname is " {{user.nickname}} "
+			<br>
+			your type is "{{user.type}}"
+			</h2>
+			{% if user.type == 'Customer'%}
+			<h3 class="buy_msg">What do you want to buy?</h3>
+			{% elif user.type == 'Vendor'%}
+			<h3 class="buy_msg">What do you want to sell?</h3>
+			{%endif%}
+			<form class="searchForm" method="post" action="/searchProducts">
+			<p class="category">
+				<select name="category_id">
+					{% for category in categories %}
+					<option value="{{category.id}}">{{category.category_name}}</option>
+					{% endfor %}
+				</select>
+				<input type="text" name="product_name" size="35">
+				<input type="submit" value="Search">
+			</p>
+			</form>
+		</div>
+		</div>
+	</body>
+</html>

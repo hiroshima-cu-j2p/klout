@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../static/css/styles2.css" type="text/css"/> 
+	</head>
+	<body>
+		<div class="container">
+			<div class="main">
+				<h4 style="float:right;margin-right:2px;margin-top:-1px;">
+				 	<a class="click" href="/create_new" > Create New Product &nbsp;</a>
+					<a class="click" href="/logout">Logout</a>
+				</h4>
+				<br>
+		 		<h1><a href="/selectproduct">KLOUT</a></h1>
+				<h1>"Product's details"</h1>
+				
+				<div class="detail_a_i">			
+					<div class="detail" style="float:left">
+						<p class="name" style="font-size:20px">{{product.product_name}}</p>
+
+						<img border="0" src="/static/images/img001.gif" width="250" height="250" alt="image"/>
+						<p class="comment" style="font-size:20px">{{product.description}}</p>
+					</div>
+		
+					<div class="a_i" style="float:left;clear:right;">
+						<br>
+				 		<br>
+						<p style="font-size:20px">"Auction Information"</p>
+					
+						<form method="post" action="/saveVendorChoice">
+							<input type="hidden" name="product_id" value="{{ product.id }}">
+							<label> Vender Lowest Price:{{Vender_Lowest_Price}}</label>
+					 		
+					 		<hr size="1" width="350" align="right"> 
+					 					 	
+					 		<label>Customer Highest Price:{{Customer_Highest_Price}}</label>
+					 	
+					 		<hr size="1" width="350" align="right">
+					 	
+					 		<label>Number of "WANT":{{product.want_count}}</label>
+					 		
+					 		<hr size="1" width="350" align="right">
+					 		
+					 		<label>YOUR SELECT PRICE:{{user_product.price}}</label>
+					
+					 		<hr size="1" width="350" align="right">
+					 		<p>Your Price:<input type="text" name="your_asking_price" >
+					 		{% if not user_product or user_product.want=='No' %}
+					 			<input type="submit" value="SELL">
+			 				{% else %}
+								<input type="submit" value="Change">
+							{% endif %}
+							</p>
+					 		<br>
+					 		<br>
+					 		
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div> 
+	</body>
+</html>

@@ -1,0 +1,78 @@
+Python Installation
+====================
+
+1. Download Python 2.7.5 from http://www.python.org/getit/
+2. Install Python on Windows / Linux as per your environment
+3. Download Python Virtual Env from https://pypi.python.org/pypi/virtualenv
+4. Extract the virtualenvXXX.tar.gz to a folder "D:\virtualenv\"
+5. Create a Folder for your new virtual environment like "D:\klout-env"
+6. On Command Prompt ("cmd"), 'CD' to the "D:\virtualenv\virtualenv-1.10.1"
+7. Setup virtualenv - On "cmd" - run "python virtualenv.py D:\klout-env"
+8. On "cmd" 'cd' to the new environment "cd D:/klout-env"
+9. Activate the Virtual Env, on cmd run "Scripts/activate.bat"
+10. To install required dependencies run following commands on 'cmd' :
+
+> pip install pymysql flask jinja2 flask-sqlalchemy flask-login
+
+Your python virtual environment in now ready.
+
+Database Installation
+======================
+
+1. Install MySQL Server 5.5 on your computer (assumed root user password as 'root').
+
+2. Run MySQL Client and login as 'root' with user 'root'.
+
+3. On Mysql Client create new database using:
+ > create database klout;
+
+4. Create new user using :
+ > create user 'klout'@'localhost' identified by 'Pass@123';
+
+5. Grant Database Privileges to the new user using:
+ > grant all privileges on klout.* to 'klout'@'localhost';
+
+6. On MySQL Client change to klout database:
+ > use klout;
+ 
+7. To create project tables, you may copy paste contents from 'all_tables.sql'
+
+8. To populate data, you may copy paste contents from 'master_data.sql'
+
+Eclipse Setup
+==============
+
+1. Download and Install latest JDK (Java: http://java.com/en/download/index.jsp) and Eclipse from "www.eclipse.org"
+
+2. Install the PyDev Eclipse Plugin from (http://pydev.org/): Download the ZIP file and expand it in the Eclipse Folder.
+
+3. Setup the Python Interpreter in Eclipse using following steps:
+
+On Eclipse Menu:
+ - Click Windows > Preferences 
+ - Expand "PyDev" group on the left side navigation
+ - Click "Interpreter - Python" item
+ - On the Right Side section, "Python Interpreters", click "New"
+ - On the "Select interpreter" Popup give a name like "klout-python"
+ - Browse to the "D:\klout-env\Scripts" folder and Choose "python.exe" file
+ - On the next window ('Selection Needed'): Check the option for "...\Python2.7.5\Lib", and then click OK
+ - Finally click "Ok" on the bottom of the Python Interpreters window.
+ - This will Setup the python interpreter for Eclipse.
+
+4. Expand your project zip file to a project folder : "D:\Project-J2P\KLOUT"
+
+5. Import your Project In Eclipse by clicking : File > Import and then choose "Existing Project into Workspace"
+
+6. Browse to the "D:\Project-J2P\KLOUT" folder and import the project.
+
+7. To setup the python interpreter for project: Right Click the project name "KLOUT" and click properties
+
+8. Choose the group "Pydev - Interpreter" option on left navigation
+
+9. Choose the "klout-python" in "interpreter" option and click OK.
+
+10. To test the project you can run the main program using Eclipse:
+ - Open the run_app.py file by double clicking the file under the project.
+ - Use Right Click and choose Menu: "Run As" > "Python Main"
+ 
+11. Use the Internet Explorer and open page "http://127.0.0.1:5000"

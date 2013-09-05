@@ -1,0 +1,22 @@
+.body{
+	text-align:center;
+	background-color:#152030;
+	padding:100;
+}
+
+.main{
+	background-color:#ffffff;
+	width:800;
+	height:550;
+	text-align:center;
+}
+h1{
+	margin:40 0;
+}
+form{
+	width:500;
+	margin-top:50;
+	text-align:left;
+}
+
+

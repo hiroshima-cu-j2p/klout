@@ -1,0 +1,36 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="/static/css/styles2.css" type="text/css"/> 
+	</head>
+		<body>
+			<div class="container">
+				<div class="main">
+		 		<h4 style="float:right;margin-right:2px;margin-top:-1px;"><a class="click" href="/logout">Logout</a></h4>
+			 	<h1><a href="/selectproduct">KLOUT</a></h1>
+				<h2>Create New Product</h2>
+				<h3 class="error">{{ message }}</h3>
+				<form action="/confirmcreatepage" method="post" class="create"> 	
+					<label>PRODUCT NAME:</label>
+					<input type="text" name="product_name">
+				 	<hr/>			
+		
+					<label>WHICH CATEGORIES:</label>
+					<select name="category_id">
+						{% for category in categories %}
+						<option value="{{category.id}}">{{category.category_name}}</option>
+						{% endfor %}
+					</select>
+				 	<hr/>
+				 	<label>Description:</label>
+					<input type="text" name="description" size="80" value="">
+					<hr/>
+					<label>IMAGE:</label>
+					<input type="file" name="product_image" size="40" value="">
+					<hr/>
+					
+				 	<input type="submit" value="UPLOAD">
+				</form> 
+				</div>
+			</div>
+	</body>
+</html>

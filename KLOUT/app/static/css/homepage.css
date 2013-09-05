@@ -1,0 +1,50 @@
+.body{
+	background-color:#152030;
+	text-align:center;
+
+	padding:100;
+}
+.main{
+	background-color:#fff;
+	text-align:center;
+	width:950;
+	height:500;
+}
+
+h1{
+	margin:20;
+}
+h2{
+	margin-top:50;
+}	
+h3{	
+	margin-top:150;
+}
+form{
+	position:relative;
+	overflow:hidden;
+	margin-top:30;
+	text-align:center;	
+}
+.category{
+	position:relative;
+	left:270;
+	float:left;
+	margin:0;
+	padding:0;
+	margin-right:5;
+}
+.product{
+	width:150;
+	position:relative;
+	left:0;
+	margin:0;
+	padding:0;
+}
+input{
+	position:relative;
+	left:0;
+	margin:0;
+	padding:0;
+}
+

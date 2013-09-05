@@ -1,0 +1,38 @@
+<html>
+
+	<header>
+	<link rel="stylesheet" href="/static/css/styles2.css" type="text/css"/> 
+	</header>
+		<body>
+			<div class="container">
+				<div class="main">
+					<h4 style="float:right;margin-right:2px;margin-top:-1px;">
+					{% if user.type == 'Vendor' %}
+			 		<a class="click" href="/create_new" > Create New Product &nbsp;</a>
+			 		{% endif %}
+			 		<a class="click" href="/logout">  Logout</a></h4>
+					<br>
+					<h1><a href="/selectproduct">KLOUT</a></h1>
+					<h2>PRODUCTS LIST</h2>
+					<table border="1" width="80%" align="center">
+						<caption>products</caption>
+						<tr>
+							<th>value</th><th>product_name</th><th>price</th>
+						</tr>
+						{% for product in products %}
+						<tr>
+							<td>{{product.want_count}}</td>
+							{% if user.type == 'Customer' %}
+								<td><a href="/detail_for_customer?product_id={{product.id}}">{{product.product_name}}</td>
+							{% elif user.type == 'Vendor' %}
+								<td><a href="/detail_for_vendor?product_id={{product.id}}">{{product.product_name}}</td>
+							{% endif %}
+							<td>price</td>
+						</tr>
+						{% endfor %}
+					</table>
+					
+				</div>
+			</div>
+		</body>
+</html>

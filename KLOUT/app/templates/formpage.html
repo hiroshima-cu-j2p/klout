@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/static/css/styles2.css" type="text/css"/> 
+
+	</head>
+	<div class="container">	
+		<div class="main">
+		 	<h1><a href="/">KLOUT</a></h1>
+			<h2>SET UP YOUR ACCOUNT</h2>
+			<h3 class="error">{{ message }}</h3>
+			<form class="signupform" action="/formSubmit" method="post"> 	
+				<label>YOUR NAME:</label>
+			 	<input type="text" name="username">
+			 	<hr/>
+	
+			 	<label>E-MAIL:</label>
+			 	<input type="text" name="email">
+			 	<hr/>
+			 	
+			 	<label>NICKNAME:</label>
+			 	<input type="text" name="nickname" >
+			 	<hr/>
+			 	
+				<label>PASSWORD (4-8):</label>
+			 	<input type="password" name="password">
+			 	<hr/>
+			 	
+			 	<label>CONFIRM PASSWORD:</label>
+			 	<input type="password" name="confirm_password">
+			 	<hr/>
+			 	
+			 	CUSTMER OR VENDOR : <select name="user_type">
+						<option value="Customer">Customer</option>
+						<option value="Vendor">Vendor</option>
+				</select>
+				<hr/>
+			 	<input type="submit" value="Submit">
+			</form> 
+			</div>
+		</div>
+	</body>
+</html>

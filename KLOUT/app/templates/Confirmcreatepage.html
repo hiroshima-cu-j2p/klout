@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="/static/css/styles2.css" type="text/css"/> 
+	</head>
+	<body>
+	<div class="container">
+		<div class="main">
+	 	<h1><a href="/selectproduct">KLOUT</a></h1>
+		<h2>Is your data right?</h2>
+		{% for user in users %}
+		<label style="font-size:20px">YOUR USERNAME : <option value="{{user.id}}">{{user.user_name}}</option></label>
+		{% endfor %}
+		 	<hr/>
+
+		 	<label style="font-size:20px">PRODUCT NAME : {{product.product_name}}</label>
+		 	
+		 	<hr/>
+		 	
+		 	<label style="font-size:20px">description : {{product.description}}</label>
+		 	
+		 	<hr/>
+		 	
+		 	<label style="font-size:20px">CATEGORY : {{category.category_name}}</label>
+		 	<hr/>
+		 	
+			<a href="/selectproduct">Ok</a>
+		</div>
+	</div>
+	</body>
+</html>
+
+					
+					

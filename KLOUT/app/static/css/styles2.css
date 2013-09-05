@@ -1,0 +1,182 @@
+body{
+	padding:0px;
+}
+.container{
+	background-color:#152030;
+	text-align:center;
+	padding:30px;
+}
+.main{
+	margin:auto;
+	background-color:#fff;
+	text-align:center;
+	width:984px;
+	padding:20px 0;
+/*	height:90%;*/
+}
+h1{
+	margin-right:0;
+	color:blue;
+	padding:20px;	
+}
+h2{
+	margin-left:0;
+	color:red;
+}
+h5{
+	margin-top:50;
+	color:#3366cc;
+}
+form{
+	border: ridge 3px #3366cc;
+	margin:30px auto;
+	margin-top:-10px;
+	text-align:right;
+	padding:20px 10px;
+}
+.loginform{
+	width:350px;
+}
+.signupform {
+	width:450px;
+}
+label{
+	margin-right:0;
+}
+input[type="submit"]{
+	width:60;
+	margin-left:20px;
+}
+h6{
+	text-align:right;
+	margin-right:100;	
+}
+.logout_link {
+	float:right;
+	margin-right:0px;
+	margin-top:-1px;
+	text-decoration:underline;
+}	
+.error {
+	color:green;
+}
+a:link {color:#000;}
+a:visited{color:#000;} 
+a:hover{color:#000;} 
+a:active{color:#000;} 
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+a.click{
+	border-left: inset 1px #000;
+	padding:8px;
+}
+
+a.click:link {color:#f00;}
+a.click:visited{color:#f00;} 
+a.click:hover{color:#00f;} 
+a.click:active{color:#000;} 
+a.click{text-decoration:none;}
+a.click:hover{text-decoration:underline;}
+
+a.Signup:link {color:#f00;}
+a.Signup:visited{color:#f00;} 
+a.Signup:hover{color:#00f;} 
+a.Signup:active{color:#000;} 
+a.Signup{text-decoration:none;}
+a.Signup:hover{text-decoration:underline;}
+
+
+h3.buy_msg{	
+	margin-top:50px;
+}
+.searchForm {
+	margin-top:30px;
+	text-align:center;
+}
+.category{
+	margin:0;
+	padding:0;
+}
+.product{
+	width:150;
+	position:relative;
+	left:0;
+	margin:0;
+	padding:0;
+}
+input{
+	position:relative;
+	left:0;
+	margin:0;
+	padding:0;
+}
+form.create{
+	width:750px;
+}
+form.confirm{
+	width:750px;
+}
+.detail_a_i{
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+	overflow: hidden;
+
+}	
+.detail{
+	float:left;
+	width:360px;
+/*	width:500;
+	height:400;
+	border: 2px black solid;
+	margin-bottom:30;
+	position:absolute;
+	right:10px*/
+}
+.a_i{
+	width:400px;
+/*	position:absolute;
+	right:300;
+	margin-right: 3S0px;
+	width:600;
+	hight:150;
+	border: 2px black solid; 
+	padding:20 10;*/
+	
+}
+label1{
+	color: #ff0000;
+	
+}
+.a_v{
+	border: 2px black solid; 
+	text-align:left;
+}
+h1.vendor{
+	padding-top:10px ;
+	margin-bottom: -5px;
+}
+p.name{
+	margin-top:54.5px;
+}
+.vendors{
+	width:700px;
+	margin:0 auto;
+}
+.purchaseform{
+	width:270px;
+	border: ridge 3px #3366cc;
+	margin-left:50px;
+	margin-top:150px;
+	text-align:right;
+	padding:20px 10px;
+}
+.purchaseform{
+	width:270px;
+	border: ridge 3px #3366cc;
+	text-align:center;
+	padding:20px 10px;
+}
+p.comment{
+}			

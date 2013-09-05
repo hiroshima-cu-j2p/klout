@@ -1,0 +1,45 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="/static/css/styles2.css" type="text/css"/>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="main">
+			 	<h1><a href="/">KLOUT</a></h1>
+				
+				<h3 class="error">{{ get_flashed_messages() }}</h3>
+				<hr>
+				
+				<h5><font size="5">INPUT REGISTRATION DATA</font></h5>
+					
+				<form class="form loginform" action="/loginpage" method="post">
+				
+					<label1> NAME :</label1>
+				 	<input type="text" name="login_username">
+				 	
+				 	<hr size="1" color="#000000">
+				 	
+				 	<label1>or E-MAIL :</label1>
+				 	<input type="text" name="login_e_mail">
+				 	
+				 	<hr size="1" color="#000000">
+				 	
+				 	<label2>PASSWORD(4-8):</label2>
+				 	<input type="password" name="login_password">
+				 	<br>
+					<input type="submit" value="Login"> 	
+				</form> 
+				
+				<h4><font size="3">Don't have an account?</font>
+				 	<font size="5">
+				 	<a href="/formPage" class="Signup">Sign Up</a>
+				 	</font>
+				</h4> 
+		
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="/static/css/styles2.css" type="text/css"/> 
+	</head>
+	<body>
+	<div class="container">
+		<div class="main">
+	 	<h1><a href="/">KLOUT</h1>
+		<h2>Is your data right?</h2>
+		<form class="signupform" action="/formSubmit" method="post"> 	
+			<label style="font-size:20px">YOUR USERNAME : {{ username}}</label>
+		 	
+		 	<hr/>
+
+		 	<label style="font-size:20px">E-MAIL : {{email}}</label>
+		 	
+		 	<hr/>
+		 	
+		 	<label style="font-size:20px">NICKNAME : {{nickname}}</label>
+		 	<hr/>
+		 	<label style="font-size:20px"> TYPE: {{user_type}}</label>
+		 	<hr/>
+		 	
+		 	<a href="/selectproduct">Homepage</a>
+		</form> 
+		</div>
+	</div>
+	</body>
+</html>
