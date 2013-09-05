@@ -1,4 +1,4 @@
 klout
 =====
 
-Social Shopping - Clout for Bulk Social Shopping 
+Social Shopping - Negotiation based auction model, allow your numbers to lower the price. 
